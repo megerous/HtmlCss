@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: alk;
+    src: url(/fonts/alk-sanet.ttf);
+}
+@font-face {
+    font-family: merab;
+    src: url(/fonts/dm-merab-kostava.ttf);
+}
+@font-face {
+    font-family: nino;
+    src: url(/fonts/bpg_nino_mtavruli_normal.ttf);
+}
+.div1 {
+    width: 600px;
+    height: 150px;
+    margin: 40px;
+    padding: 20px;
+    border:  10px solid rgba(255, 0, 0, 0.3);
+    font-family: merab;
+
+}
+.div2 {
+    width: 800px;
+    height: 200px;
+    margin: 60px;
+    padding: 30px;
+    border:  5px dotted rgb(98, 0, 255);
+    font-family: alk;
+}
+
+.div3{
+    width: 90%;
+    height: 100px;
+    margin: 60px;
+    padding: 30px;
+    border:  5px dashed rgb(0, 255, 76);
+    font-family: nino;
+
+}
+header h1 {
+    text-align: center;
+}
+article div {
+    margin: 10px auto;    
+    background-color: blanchedalmond;
+    width: 600px;  
+    
+}
+article h2{
+    font-weight: bold;
+    color:brown;   
+    padding: 10px;
+}
+
+article img{    
+    height: 200px;
+    float:left; 
+    margin: 10px 10px 10px 0;
+    
+
+}
+
+article span {
+    letter-spacing: 2px;
+}
+
+  blockquote {
+    
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 10px dashed red;
+    background-color: #faebbc;
+}
+ blockquote::before {
+      content:  open-quote;
+      font-size: 3em;
+      color: #dd1010;
+      display: inline; /* or inline-block, or absolute positioning */
+      margin-bottom: 10px;
+     
+    }
+    p {
+        margin:5px;
+        line-height: 25px;
+    }
+
+
+

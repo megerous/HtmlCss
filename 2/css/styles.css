@@ -1,0 +1,17 @@
+
+body {
+  background-color: #faf2e4; 
+  margin: 0 10%;
+  }
+
+h1 {  text-align: center;  
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;  
+}
+    h3 {  color: #d1633c;  
+}
+.logo {
+    text-align: center;
+     margin: 2% 0;
+}
+
