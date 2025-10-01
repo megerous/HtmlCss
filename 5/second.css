@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 30px;
+}
+
+
+header ul {
+    
+     text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    padding:20px;   
+    text-transform:  capitalize
+    
+    
+    ;
+    font-size: 0.8rem;
+}
+.head_div{
+    text-align: center;
+    margin: 10px;
+}
+.container{
+    max-width: 80%; 
+    background-color: pink;
+    margin: auto;   
+    padding: 40px 20px;
+    
+}
+
+
+.child {
+    background-color: white;
+    max-width: 70%; 
+    margin: auto;   
+    padding: 15px;
+    text-align: left;
+    line-height: 1.5;
+    width: 60%;
+}
+section {
+    margin:20px;
+}
+section p{
+    margin-top: 10px;
+}
