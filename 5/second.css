@@ -17,10 +17,7 @@ header ul {
 header ul li {
     display: inline-block;
     padding:20px;   
-    text-transform:  capitalize
-    
-    
-    ;
+    text-transform:  capitalize;
     font-size: 0.8rem;
 }
 .head_div{
