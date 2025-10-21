@@ -1,0 +1,24 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50%;
+  height: 22px;
+  border-radius: 20px;
+  color: #8178c0;
+  border: 2px solid;
+  position: relative;
+
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit; 
+  background-image: linear-gradient(rgb(228, 167, 97), rgb(21, 21, 90));
+  animation: kf 5s infinite;
+  animation-timing-function: linear;
+}
+@keyframes kf {
+    100% {inset:0}
+    
+}
