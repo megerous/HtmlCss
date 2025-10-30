@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: mont;
+    src: url(/10/fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: mont;
+    src: url(/10/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: lora;
+    src: url(/10/fonts/Lora.ttf);
+    font-weight: 400;
+}
+.green {
+    background: #A3D9A5;
+}
+.dark-green{
+    background-color:#455F30;
+    padding: 2px;;
+}
+.mont-header{
+    font-size: clamp(1rem, 1.2vw, 2.2rem);
+}
+
+
+.mont400 {
+    font-family: mont;
+    font-weight: 400;  
+}
+
+
+.nav-width {
+    max-width: 500px;
+   
+}
+
+.m30 {
+    margin: 30px;
+}
+header{
+    padding:20px;
+}
+
+.container{    
+    max-width: 1400px;
+    margin: 0 auto;
+  
+}
+
+.row {
+    display: flex;    
+    gap: 20px;    
+}
+
+.align-center{
+    align-items: center;
+}
+
+header img{
+    max-width: 213px;
+}
+
+.space-left{
+justify-content: left;
+}
+.space-between{
+justify-content: space-between;
+}
+
+.section-image h1 span {
+    color:#0B6623;
+}
+
+.section-image h1{
+     font-size: clamp(1.5rem, 3vw, 10rem);
+     padding-top:60px;
+     padding-left: 30px;
+     margin-bottom: 30px;  
+
+}
+
+.section-image p{
+     font-size: clamp(0.8rem, 1.2vw, 2rem);
+     padding: 30px;
+     margin-bottom: 30px;
+
+}
+
+.section-image input{
+     font-size: clamp(0.8rem, 1vw, 5rem);
+     padding: 5px;
+     margin-left: 30px;
+     margin-bottom: 30px;
+     margin-right: -3px;
+     border:0;
+     display: inline-block;
+    
+
+}
+.section-padd {
+    padding:30px;
+}
+
+.btn-join{
+    background-color: #455F30;
+    color: #FBFBFB;
+     font-size: clamp(0.8rem, 1vw, 5rem);
+     padding: 5px;
+     margin:0;
+     border:0;
+     display: inline-block;
+
+}
+.section-image{
+       position: relative;
+      overflow-x: clip;      
+      max-height: 700px;
+      width: 100%;  
+
+    
+}
+
+.image {
+
+     position: absolute;
+     bottom: 0;
+     right: -5vw;
+     width: 70%; 
+}
+
+.image-container{
+     position: relative; 
+      
+     display: flex; /* Используем Flexbox */
+ 
+ 
+}
+
+.display-in {
+    display: inline-block;
+ 
+}
+.image-container img {
+  display: block; 
+  width: 100%;
+}
+.image-container::after{
+  content: 'Yoga Classes';
+  font-weight: 800;
+  font-family: lora;
+  color:white;
+  letter-spacing: 2px;
+  font-size: 32px;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+
+   z-index: 2; 
+}
+
+.image-container::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 128, 0, 0.6) 0%, 
+    rgba(141, 173, 120, 0.6) 35%,
+    rgba(0, 0, 255, 0) 100% /* Синий полупрозрачный */
+  );
+  z-index: 1; 
+}
+
+.con{
+    margin: 30px;
+     text-align: center;
+}
+
+.button{
+    width: 139;
+    height: 47; 
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 15px;  
+    font-size: clamp(0.8rem, 1.3vw, 1.6rem);
+    background-color: #8DAD78;
+}
+.btn-more{
+  position: absolute;
+  top: 85%; /* Пример: выравнивание по центру по вертикали */
+  left: 50%; /* Пример: выравнивание по центру по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование с учетом размеров самой кнопки */
+  z-index: 2; /* Убедитесь, что кнопка находится поверх изображения */
+  padding: 15px;
+    border-radius: 20px;
+    border:none;
+    background-color: #8DAD78;
+    color:white;
+    font-size: 20px;
+}
+.btn-circle{
+    margin: 0 30px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border:none;
+    background-color: #8DAD78;
+    color:white;
+    font-size: 30px;
+}
+
+.btn-about{
+    border-color: #FBFBFB;   
+    color:#FBFBFB;
+    border-radius: 10px;
+}
+
+.abt-img {
+   width: 70%; 
+   padding: 30px;
+}
+
+.abt-img img {
+    margin-top: 60px;
+    max-width: 100%;
+    
+}
+.about-text {
+width: 80%; 
+  padding:30px; 
+
+}
+
+ h2 {
+
+    font-family: lora;
+    font-weight: 800;
+    letter-spacing: 1.5;
+    color: #717C56;
+    font-size: clamp(1.5rem, 3vw, 10rem);
+    padding: 60px 0;
+
+    
+}
+h3 {
+
+    font-family: lora;
+    font-weight: 700;
+    letter-spacing: 1.2;
+    
+    font-size: clamp(1.5rem, 1.5vw, 10rem);
+    padding: 20px 0;
+
+    
+}
+
+
+.paragraf{
+    padding-left: 30px;   
+
+     
+    
+}
+p {
+    padding-right: 50px;   
+    font-family: lora;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    font-size: clamp(0.6rem, 0.9vw, 2rem);
+
+}
+
+.row-footer {
+    display: flex;    
+    gap: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    
+    
+}
+.order{
+    order:-1;
+}
+
+.row-card {
+ 
+    align-items: top;
+    margin-bottom: 30px;
+}
+
+
+.row-card h2{
+   
+   font-size: clamp(1rem, 2vw, 2rem);
+
+}
+
+.card {
+    border-radius: 10px;
+    
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+.mlr0{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.logo {
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+
+.nav-ul{
+    display: flex;   
+    list-style-type: none;  
+    padding-right: 20px; 
+}
+
+.nav-ul-item{
+
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px; 
+ 
+}
+
+.nav-link{
+    text-decoration: none;
+    color:inherit;   
+    font-weight: 500;
+    gap: 10px;   
+    text-align: left;
+   
+}
+.box-title{
+    background-color: #0C0C0C;
+    border-radius: 20px;
+}
+.page-title{
+font-size: clamp(1.5rem, 3vw + 1rem, 3.5rem);
+padding: 1.5em;
+letter-spacing:  0.1em;
+text-align: center;
+color:#FBFBFB;
+}
+
+
+
+.footer{
+    padding-top: 7px;    
+    padding-bottom: 7px; 
+    background-color: #0C0C0C;
+    color: #FBFBFB;   
+  
+}
+.footer-a{
+    padding: 0;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+   
+}
+
+.footer-nav{
+    display:flex;
+    gap: 23px;    
+}
+
+.nav-ul-footer{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+      
+   
+}
+
+.nav-ul-item-footer{
+    padding:0;
+    line-height: 2em;
+}
+
+
+
+.input-group {
+  display: flex; /* Используем flexbox для размещения элементов */
+  border: 1px solid #ccc; /* Граница для всего контейнера */
+  border-radius: 15px;
+  overflow: hidden; /* Обрезает содержимое, выходящее за границы */
+  width: 50%;
+  justify-content: center;
+}
+
+.input-group input {
+  flex-grow: 1; 
+  border: none; 
+  padding: 10px;
+  outline: none; 
+}
+
+.input-group button {
+  border: none;
+  padding: 10px 15px;
+
+}
+.flex-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.center-div {
+text-align: center;
+}
+    
+footer .container {
+    background-color: #313131;
+    margin-top: 30px;
+    color: white;
+    
+ 
+}
+
+footer p {
+    
+    font-family: lora;
+    font-weight: 400;
+    text-transform: capitalize;
+   
+}
+
+footer h3{
+  color: white;
+    font-family: mont; 
+    padding:80px 80px;
+   
+}
+
+table {
+  width: 70%; /* Задайте любую необходимую ширину */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+    th, td {
+      padding: 10px 25px 20px 5px; 
+          font-family: lora;
+
+      
+    }
+     
+    
+
+
+
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        gap: 5px; 
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .row-footer{
+        flex-wrap: wrap;
+        padding: 10px;   
+        gap: 10px;     
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;  
+        flex-basis: 100%;
+        order: 2;
+        justify-content: space-between;
+    }
+    .footer-left{
+        flex-basis: 50%;
+    }
+   
+
+
+}
+
+
